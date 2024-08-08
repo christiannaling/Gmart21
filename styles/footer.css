@@ -1,0 +1,15 @@
+.footer-container{
+  background-color: orange;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container div{
+  font-size: 0.8em;
+}
+
+.footer-container span{
+  font-weight: bold;
+}

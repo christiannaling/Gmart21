@@ -8,8 +8,63 @@
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <header>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <li><a href="#" onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#shop-section">Shop</a></li>
+          <li><a href="#pages-section">Pages</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+        <ul>
+          <li><a href="#"><img src="images/gmart-logo.png" alt="logo"></a></li>
+          <li class="hideOnMobile"><a href="#">Home</a></li>
+          <li class="hideOnMobile"><a href="#shop-section">Shop</a></li>
+          <li class="hideOnMobile"><a href="#pages-section">Pages</a></li>
+          <li class="hideOnMobile"><a href="#contact-section">Contact</a></li>
+          <li class="menuButton"><a href="#" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+  </header>
+  <main>
+    <section>
+      <div class="background-container">
+        <img class="background-image" src="images/lays.jpeg" alt="">
+        <button class="shop-now-btn">Shop Now</button>
+      </div>
+    </section>
+    <section>
+        <div class="service-container">
+          <div class="services">
+            <i class="fa-solid fa-check"></i>
+            <div>Quality Product</div>
+          </div>
+          <div class="services">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>Free Shipping</div>
+          </div>
+          <div class="services">
+            <i class="fa-solid fa-right-left"></i>
+            <div>14-Day Return</div>
+          </div>
+          <div class="services">
+            <i class="fa-solid fa-phone-volume"></i>
+            <div>24/7 Support</div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div>&#169; <span>GMART21</span>. Designed by Christian</div>
+    </div>
+  </footer>
   <script src="scripts/index.js"></script>
 </body>
 </html>
