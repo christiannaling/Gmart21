@@ -1,0 +1,141 @@
+.header-container{
+  height: 30vh;
+  background-color: rgb(237, 241, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.header-container a{
+  color: orange;
+  text-decoration: none;
+}
+
+.contact-queries-container{
+  padding: 8vh 7vh 8vh 5vh;
+}
+
+.contact-title{
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.input-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+}
+
+.input-form input{
+  height: 4vh;
+  width: 80%;
+  margin-bottom: 2vh;
+  font-size: .8em;
+  padding: .4vh 0vh .4vh 2vh;
+  line-height: 1.5;
+  outline: none;
+}
+
+textarea{
+  height: 34vh;
+  width: 80%;
+  margin-bottom: 2vh;
+  font-family: "Poppins", sans-serif;
+  font-size: .8em;
+  padding: 1vh 0vh 1vh 2vh;
+  line-height: 1.5;
+  outline: none;
+}
+
+.input-form button{
+  background-color: orange;
+  border: none;
+  font-size: .8em;
+  width: 10rem;
+  padding: 2vh;
+  cursor: pointer;
+}
+
+/* Styles for extra small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .input-form{
+    width: 50%;
+  }
+  .input-form input{
+    width: 80%;
+  }
+  textarea{
+    width: 80%;
+  }
+  .input-form button{
+    width: 6rem;
+    padding: 1vh;
+  }
+}
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .input-form{
+    width: 100%;
+  }
+  .input-form input{
+    width: 100%;
+  }
+  textarea{
+    width: 100%;
+  }
+  .input-form button{
+    width: 6rem;
+    padding: 1vh;
+  }
+}
+
+.info-form{
+  text-align: start;
+}
+
+.info-title{
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.info-description{
+  font-size: .8em;
+  width: 43.8vh;
+  text-align: justify;
+  margin-bottom: 2vh;
+}
+
+/* Styles for small devices */
+@media (max-width: 767px) {
+  .info-description{
+    width: 31vh;
+  }
+}
+.contact-info{
+  color: darkgray;
+  font-size: .8em;
+  margin-bottom: 1vh;
+}
+
+.contact-info i{
+  color: orange;
+  margin-right: 2vh;
+}

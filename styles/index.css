@@ -13,6 +13,17 @@
   filter: brightness(70%);
 }
 
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .background-container{
+    height: 80vh;
+  }
+  .background-image{
+    height: 60%;
+    width: 70%;
+  }
+}
+
 .shop-now-btn{
   position: absolute;
   background-color: white;
