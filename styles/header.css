@@ -46,7 +46,7 @@ nav li:first-child{
 }
 
 nav img{
-  height: 60px;
+  height: 120%;
   margin-left: 10px;
 }
 
@@ -61,7 +61,7 @@ nav img{
   right: 0px;
   bottom: 0px;
   width: 55%;
-  background-color: rgb(249, 236, 217);
+  background-color: orange;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;

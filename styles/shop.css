@@ -1,0 +1,126 @@
+.header-container{
+  height: 30vh;
+  background-color: rgb(237, 241, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.header-container a{
+  color: orange;
+  text-decoration: none;
+}
+
+.item-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5vh;
+  gap: 4vh;
+  margin-bottom: 8vh;
+}
+
+.item{
+  height: 100%;
+  width: 30%;
+  border: 1px solid lightgray;
+}
+
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .item{
+    width: 70%;
+  }
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .item{
+    width: 40%;
+  }
+}
+
+.item div{
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.item-info{
+  padding: 2vh;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+
+.item-name{
+  margin-bottom: 1vh;
+}
+
+.item div span{
+  text-decoration: line-through;
+  color: darkgray;
+}
+
+.item img{
+  width: 100%;
+}
+
+.details-and-cart{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2vh 2vh;
+}
+
+.details-and-cart i{
+  color: orange;
+}
+
+.details-and-cart a{
+  text-decoration: none;
+  color: black;
+}
+
+.details-and-cart a:hover{
+  color: orange;
+}
+
+.page-navigation-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.page-navigation-container i{
+  font-size: .6em;
+}
+
+.page-active{
+  padding: 1.5vh;
+  border: 1px solid lightgray;
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.page-not-active{
+  padding: 1.5vh;
+  border: 1px solid lightgray;
+  color: orange;
+  text-decoration: none;
+  text-align: center;
+}
+
+.page-not-active:hover{
+  background-color: rgb(236, 236, 236);
+}
+
+
