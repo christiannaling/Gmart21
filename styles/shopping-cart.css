@@ -1,0 +1,245 @@
+.header-container{
+  height: 30vh;
+  background-color: rgb(237, 241, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title{
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.header-container a{
+  color: orange;
+  text-decoration: none;
+}
+
+.header-container a:hover{
+  color: rgb(197, 131, 124);
+}
+
+.cart-details-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10vh 5vh 10vh 5vh;
+  flex-wrap: wrap;
+}
+
+.content-table{
+  border-collapse: collapse;
+  font-size: 0.8em;
+  width: 50%;
+  margin-bottom: 5vh;
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .cart-details-container{
+    padding: 10vh 3vh 10vh 3vh;
+  }
+  .content-table{
+    width: 100%;
+  }
+}
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .cart-details-container{
+    padding: 5vh 1vh 8vh 1vh;
+  }
+  .content-table{
+    width: 100%;
+  }
+}
+
+.content-table thead tr{
+  background-color: rgb(237, 241, 255);
+  color: black;
+  text-align: center;
+}
+
+.content-table tbody td, thead th{
+  border: 1px solid rgb(237, 241, 255);
+}
+
+.content-table td:first-child{
+  display: flex;
+  align-items: center;
+  padding: 1vh;
+}
+
+.content-table th, td:nth-child(2), td:nth-child(4){
+  text-align: center;
+  padding: 1vh;
+}
+
+.content-table td:last-child{
+  text-align: center;
+  padding: 1vh;
+}
+
+.item-img{
+  width: 40px;
+}
+
+.quantity-container{
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.quantity-btn{
+  background-color: orange;
+  border: none;
+  font-size: .7em;
+  padding: 1vh;
+  cursor: pointer;
+}
+
+.quantity-btn:hover{
+  background-color: rgb(197, 131, 124);
+  color: white;
+}
+
+.quantity-input{
+  width: 3vh;
+  padding: 1vh;
+  background-color: rgb(237, 241, 255);
+  border: none;
+  margin: 0;
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 768px) {
+  .quantity-btn{
+    font-size: .8em;
+    padding: 1vh;
+  }
+  .quantity-input{
+    width: 3vh;
+    padding: 1vh;
+  }
+}
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .quantity-btn{
+    padding: .6vh;
+  }
+  .quantity-input{
+    width: 1.2vh;
+    padding: .4vh;
+  }
+}
+
+.remove-btn{
+  background-color: orange;
+  border: none;
+  padding: 1vh;
+  cursor: pointer;
+}
+
+.remove-btn:hover{
+  background-color: rgb(197, 131, 124);
+  color: white;
+}
+
+.cart-summary-container{
+  width: 25%;
+  font-size: .8em;
+}
+
+.coupon-container{
+  display: flex;
+}
+
+.coupon-container input{
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-size: .8em;
+  width: 100%;
+  flex: 1;
+  padding: 1.5vh 0vh 1.5vh 1.5vh ;
+  margin: 0;
+}
+
+.coupon-container button{
+  background-color: orange;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: .8em;
+  flex: 1;
+  padding: 1.5vh .8vh 1.5 .8vh;
+  margin: 0;
+}
+
+.coupon-container button:hover{
+  background-color: rgb(197, 131, 124);
+  color: white;
+}
+
+.cart-summary-receipt{
+  border: 1px solid rgb(237, 241, 255);
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Styles for small devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .cart-summary-container{
+    width: 90%;
+  }
+  .cart-summary-receipt{
+    margin-top: 4vh;
+  }
+}
+/* Styles for extra small devices */
+@media (max-width: 575px) {
+  .cart-summary-container{
+    width: 90%;
+  }
+  .cart-summary-receipt{
+    margin-top: 3vh;
+  }
+}
+
+.cart-summary-title{
+  background-color: rgb(237, 241, 255);
+  padding: 1vh;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.cart-space-between{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 2vh 1vh 2vh;
+}
+
+.cart-total-space-between{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 2vh 1vh 2vh;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.cart-summary-receipt button{
+  background-color: orange;
+  border: none;
+  padding: 2vh;
+  margin: 2vh;
+  font-family: "Poppins", sans-serif;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+.cart-summary-receipt button:hover{
+  background-color: rgb(197, 131, 124);
+  color: white;
+}

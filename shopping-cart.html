@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmart21</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/shopping-cart.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li><a onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a>Pages</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html"><img src="images/gmart-logo.png" alt="logo"></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
+        <li class="hideOnMobile"><a>Pages</a>
+          <ul>
+            <li class="hideOnMobile"><a href="shopping-cart.html">Shopping Cart</a></li>
+            <li class="hideOnMobile"><a href="shop.html">Checkout</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menuButton"><a onclick="showSidebar()"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="header-section">
+      <div class="header-container">
+        <div class="header-title">SHOPPING CART</div>
+        <div><a href="index.html">Home</a> - Shopping Cart</div>
+      </div>
+    </section>
+    <section class="cart-details-section">
+      <div class="cart-details-container">
+        <table class="content-table">
+          <thead>
+            <tr>
+              <th>Products</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img class="item-img" src="images/snack-1.jpg" alt="">Piattos Chesse Crisps</td>
+              <td>&#8369;58.75</td>
+              <td>
+                <div class="quantity-container">
+                  <button class="quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                  <input class="quantity-input" type="number" value="1">
+                  <button class="quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+              </td>
+              <td>&#8369;58.75</td>
+              <td><button class="remove-btn"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+              <td><img class="item-img" src="images/drinks-2.png" alt="">Red Horse Beer Can</td>
+              <td>&#8369;50.00</td>
+              <td>
+                <div class="quantity-container">
+                  <button class="quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                  <input class="quantity-input" type="number" value="1">
+                  <button class="quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+              </td>
+              <td>&#8369;50.00</td>
+              <td><button class="remove-btn"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+              <td><img class="item-img" src="images/drinks-3.jpg" alt="">Alfonso Light 700ml</td>
+              <td>&#8369;349.00</td>
+              <td>
+                <div class="quantity-container">
+                  <button class="quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                  <input class="quantity-input" type="number" value="1">
+                  <button class="quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+              </td>
+              <td>&#8369;349.00</td>
+              <td><button class="remove-btn"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+              <td><img class="item-img" src="images/ice-cream-1.jpg" alt="">Magnum Almond</td>
+              <td>&#8369;230.00</td>
+              <td>
+                <div class="quantity-container">
+                  <button class="quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                  <input class="quantity-input" type="number" value="1">
+                  <button class="quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+              </td>
+              <td>&#8369;230.00</td>
+              <td><button class="remove-btn"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+            <tr>
+              <td><img class="item-img" src="images/Instant_Goods-2.jpg" alt="">Samyang 2X Spicy</td>
+              <td>&#8369;184.00</td>
+              <td>
+                <div class="quantity-container">
+                  <button class="quantity-btn"><i class="fa-solid fa-minus"></i></button>
+                  <input class="quantity-input" type="number" value="1">
+                  <button class="quantity-btn"><i class="fa-solid fa-plus"></i></button>
+                </div>
+              </td>
+              <td>&#8369;184.00</td>
+              <td><button class="remove-btn"><i class="fa-solid fa-xmark"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cart-summary-container">
+          <div class="coupon-container">
+            <input type="text" placeholder="Coupon Code" >
+            <button>Apply Coupon</button>
+          </div>
+          <div class="cart-summary-receipt">
+            <div class="cart-summary-title">Cart Summary</div>
+            <div>
+              <div class="cart-space-between">
+                <div>Subtotal</div>
+                <div>&#8369;292.75</div>
+              </div>
+              <div class="cart-space-between">
+                <div>Shipping</div>
+                <div>&#8369;20.00</div>
+              </div>
+            </div>
+            <div class="cart-total-space-between">
+              <div>Total</div>
+              <div>&#8369;312.75</div>
+            </div>
+            <button>Proceed To Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="scripts/index.js"></script>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div>&#169; <span>GMART21</span>. Designed by Christian</div>
+    </div>
+  </footer>
+</body>
+</html>

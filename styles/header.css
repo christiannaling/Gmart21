@@ -41,6 +41,24 @@ nav ul li a:hover{
   color: #f0f0f0;
 }
 
+
+ul li ul{
+  position: absolute;
+  background-color: orange;
+  flex-direction: column;
+  top: 80px;
+  width: 250px;
+  display: none;
+}
+
+ul li:hover ul{
+  display: block;
+}
+
+ul li ul li a{
+  position: relative;
+}
+
 nav li:first-child{
   margin-right: auto;
 }

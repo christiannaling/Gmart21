@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+.header-container a:hover{
+  color: rgb(197, 131, 124);
+}
+
 .contact-queries-container{
   padding: 8vh 7vh 8vh 5vh;
 }

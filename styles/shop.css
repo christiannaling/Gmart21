@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+.header-container a:hover{
+  color: rgb(197, 131, 124);
+}
+
 .item-container{
   display: flex;
   justify-content: center;
