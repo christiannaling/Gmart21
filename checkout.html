@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmart21</title>
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/checkout.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li><a onclick="closeSidebar()"><i class="fa-solid fa-xmark"></i></a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="shopping-cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html"><img src="images/gmart-logo.png" alt="logo"></a></li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="shop.html">Shop</a></li>
+        <li class="hideOnMobile"><a>Pages</a>
+          <ul>
+            <li class="hideOnMobile"><a href="shopping-cart.html">Shopping Cart</a></li>
+            <li class="hideOnMobile"><a href="shop.html">Checkout</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menuButton"><a onclick="showSidebar()"><i class="fa-solid fa-bars"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="header-section">
+      <div class="header-container">
+        <div class="header-title">CHECKOUT</div>
+        <div><a href="index.html">Home</a> - Checkout</div>
+      </div>
+    </section>
+    <section class="checkout-section">
+      <div class="checkout-container">
+        <div class="billing-title">Billing Address</div>
+        <div class="billing-address-container">
+          <div class="title-input">
+            <div>First Name</div>
+            <input type="text" placeholder="John">
+          </div>
+          <div class="title-input">
+            <div>Last Name</div>
+            <input type="text" placeholder="Wick">
+          </div>
+          <div class="title-input">
+            <div>E-mail</div>
+            <input type="text" placeholder="example@gmail.com">
+          </div>
+          <div class="title-input">
+            <div>Mobile No</div>
+            <input type="text" placeholder="+63912345678">
+          </div>
+          <div class="title-input">
+            <div>Municipality</div>
+            <select class="custom-select">
+              <option selected>Boac</option>
+              <option>Gasan</option>
+              <option>Mogpog</option>
+              <option>Sta.Cruz</option>
+              <option>Buenavista</option>
+              <option>Torrijos</option>
+            </select>
+          </div>
+          <div class="title-input">
+            <div>Barangay</div>
+            <input type="text" placeholder="Balaring">
+          </div>
+          <div class="title-input">
+            <div>ZIP Code</div>
+            <input type="text" placeholder="4900">
+          </div> 
+          <!--collapsibleForm-->
+          <div class="toggle-form-container">
+            <div class="toggle-form" for="toggleForm">
+              <input type="checkbox" id="toggleForm"> Ship to different address
+            </div>
+            <div id="collapsibleForm">
+              <div class="shipping-address-title">Shipping Address</div>
+              <div class="collapse-form">
+                <div class="title-input">
+                  <div>First Name</div>
+                  <input type="text" placeholder="John">
+                </div>
+                <div class="title-input">
+                  <div>Last Name</div>
+                  <input type="text" placeholder="Wick">
+                </div>
+                <div class="title-input">
+                  <div>E-mail</div>
+                  <input type="text" placeholder="example@gmail.com">
+                </div>
+                <div class="title-input">
+                  <div>Mobile No</div>
+                  <input type="text" placeholder="+63912345678">
+                </div>
+                <div class="title-input">
+                  <div>Municipality</div>
+                  <select class="custom-select">
+                    <option selected>Boac</option>
+                    <option>Gasan</option>
+                    <option>Mogpog</option>
+                    <option>Sta.Cruz</option>
+                    <option>Buenavista</option>
+                    <option>Torrijos</option>
+                  </select>
+                </div>
+                <div class="title-input">
+                  <div>Barangay</div>
+                  <input type="text" placeholder="Balaring">
+                </div>
+                <div class="title-input">
+                  <div>ZIP Code</div>
+                  <input type="text" placeholder="4900">
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>    
+        <!--Receipt-->
+        <div class="order-and-total-container">
+          <div class="order-container">
+            <div class="order-title">Order Total</div>
+            <div class="products-receipt">
+              <div class="product-title">Products</div>
+              <div class="order-space-between">
+                <div>Piattos Cheese Crisps</div>
+                <div>&#8369;58.75</div>
+              </div>
+              <div class="order-space-between">
+                <div>Red Horse Beer Can</div>
+                <div>&#8369;50.00</div>
+              </div>
+              <div class="order-space-between">
+                <div>Samyang 2X Spicy</div>
+                <div>&#8369;184.00</div>
+              </div>
+              <div class="subtotal-space-between">
+                <div>Subtotal</div>
+                <div>&#8369;292.75</div>
+              </div>
+              <div class="shipping-space-between">
+                <div>Shipping</div>
+                <div>&#8369;20.00</div>
+              </div>
+            </div>
+            <div class="order-total">
+              <div>Total</div>
+              <div>&#8369;312.75</div>
+            </div>
+          </div>
+          <div class="payment-container">
+            <div class="payment-title">Payment</div>
+            <div class="payment-option-container">
+              <div class="payment-option">
+                <input type="radio" name="payment" id="">
+                <div>Paypal</div>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="payment" id="">
+                <div>Maya</div>
+              </div>
+              <div class="payment-option">
+                <input type="radio" name="payment" id="">
+                <div>Gcash</div>
+              </div>
+            </div>
+            <div class="place-order-container">
+              <button>Place Order</button>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div>&#169; <span>GMART21</span>. Designed by Christian</div>
+    </div>
+  </footer>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/checkout.js"></script>
+</body>
+</html>
